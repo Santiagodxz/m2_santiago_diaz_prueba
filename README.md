@@ -39,3 +39,7 @@ SANTIAGODIAZDW@GMAIL.COM
 CC 1053826479
 
 REPOSITORIO DEL PROYECTO:
+https://github.com/Santiagodxz/m2_santiago_diaz_prueba
+
+LINK DE LA PAGINA WEB DESPLEGADA:
+https://santiagodxz.github.io/m2_santiago_diaz_prueba/
