@@ -1,0 +1,109 @@
+.hero {
+  padding: 90px 0 20px 0;
+  color: var(--color-title);
+  background-color: var(--color-background);
+}
+
+.hero-content {
+  display: flex;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+  h2 {
+    max-width: 70%;
+    padding: 0;
+    font-size: 64px;
+    margin: 0;
+
+    span {
+      color: var(--color-bt-green);
+    }
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    background-color: var(--color-bt-green);
+    width: 128px;
+    height: 52px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-size: 16px;
+  }
+
+  button:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 5px var(--color-bt-green);
+    background-color: var(--color-bt-green-hover);
+  }
+}
+
+.hero-dots {
+  display: flex;
+  justify-content: center;
+  color: var(--color-bt-green);
+  margin-top: 80px;
+}
+
+.hero-dots i:hover {
+  color: var(--color-bt-green-hover);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    padding: 30px;
+
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+
+      .hero-left {
+        align-items: center;
+        padding-bottom: 30px;
+
+        h2 {
+          font-size: 40px;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .hero-dots {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    padding: 30px;
+
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+
+      .hero-left {
+        align-items: center;
+        padding-bottom: 30px;
+
+        h2 {
+          font-size: 40px;
+          max-width: 70%;
+        }
+      }
+    }
+
+    .hero-dots {
+      display: none;
+    }
+  }
+}

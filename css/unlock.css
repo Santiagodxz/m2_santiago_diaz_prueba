@@ -1,0 +1,63 @@
+.unlock {
+  padding: 50px 0 50px 0;
+
+  .unlock-content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+  }
+
+  .unlock_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    button {
+      background-color: var(--color-bt-green);
+      width: 128px;
+      height: 52px;
+      border-radius: 4px;
+      border: none;
+      color: white;
+      font-size: 16px;
+    }
+
+    button:hover {
+      cursor: pointer;
+      box-shadow: 1px 1px 5px var(--color-bt-green);
+      background-color: var(--color-bt-green-hover);
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .unlock {
+    padding: 30px 0;
+
+    .unlock-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .unlock_text {
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .unlock {
+    padding: 30px 0;
+
+    .unlock-content {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      .unlock_text {
+        align-items: center;
+      }
+    }
+  }
+}

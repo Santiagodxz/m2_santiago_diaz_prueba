@@ -1,0 +1,121 @@
+.footer {
+  font-size: 18px;
+  background-color: #263238;
+  color: white;
+
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+
+    .footer_logo {
+      p {
+        color: white;
+        margin-top: 30px;
+      }
+
+      .social-media {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 30px;
+
+        img:hover {
+          background-color: var(--color-bt-green);
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .footer_info {
+      display: flex;
+      gap: 50px;
+
+      h3 {
+        font-size: 18px;
+        color: white;
+      }
+
+      li {
+        color: var(--second-color);
+        padding-top: 20px;
+      }
+
+      .footer_stayup {
+        h3 {
+          padding-bottom: 20px;
+        }
+      }
+
+      .footer_input {
+        display: flex;
+
+        input {
+          background-color: #ffffff20;
+          border: none;
+          height: 40px;
+          border-radius: 8px 0 0 8px;
+        }
+
+        i {
+          display: flex;
+          align-items: center;
+          background-color: #ffffff20;
+          border: none;
+          height: 40px;
+          border-radius: 0 8px 8px 0;
+          padding-right: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    font-size: 10px;
+
+    .footer_content {
+      flex-direction: column;
+      text-align: center;
+
+      .footer_logo {
+        padding-bottom: 20px;
+      }
+
+      .footer_info {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        h3 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    font-size: 10px;
+
+    .footer_content {
+      flex-direction: column;
+      text-align: center;
+
+      .footer_logo {
+        padding-bottom: 20px;
+      }
+
+      .footer_info {
+        justify-content: center;
+        flex-wrap: wrap;
+
+        h3 {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
